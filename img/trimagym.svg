@@ -1,0 +1,178 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" overflow="hidden" font-family="Segoe UI, Roboto, Arial, sans-serif">
+  <defs>
+    <linearGradient id="fondo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B2624"/>
+      <stop offset="1" stop-color="#171030"/>
+    </linearGradient>
+    <clipPath id="p1"><rect x="58" y="88" width="184" height="374" rx="22"/></clipPath>
+    <clipPath id="p2"><rect x="308" y="88" width="184" height="374" rx="22"/></clipPath>
+    <clipPath id="p3"><rect x="558" y="88" width="184" height="374" rx="22"/></clipPath>
+
+    <linearGradient id="mg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#A3AAB5"/><stop offset="1" stop-color="#5C6370"/></linearGradient>
+    <linearGradient id="mr" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F0786C"/><stop offset="1" stop-color="#B0332B"/></linearGradient>
+    <radialGradient id="foco" cx=".6" cy=".45" r=".7"><stop offset="0" stop-color="#2A2E36"/><stop offset="1" stop-color="#08090B"/></radialGradient>
+    <!-- Mitad izquierda del cuerpo, vista frontal -->
+    <g id="frenteMitad">
+      <path d="M18 22 Q30 18 30 20 L30 74 L20 72 Q16 46 15 30 Z" fill="#3A3F48"/>
+      <path d="M19 68 Q16 84 19 98 L21 128 L27 128 L29 98 L30 74 Z" fill="#3A3F48"/>
+      <path d="M15 22.5 Q9.5 25 9.6 34 L8.2 46 L5.4 63 L9.6 64.5 L13.6 48 L16.8 36 L19 27 Z" fill="#3A3F48"/>
+      <ellipse cx="15.5" cy="27" rx="4.6" ry="5.2" fill="url(#mg)" stroke="#14171C" stroke-width=".5"/>
+      <path d="M30 23 L19 25 Q17 31 21 35 Q26 37 30 34 Z" fill="url(#mg)" stroke="#14171C" stroke-width=".5"/>
+      <path d="M21 37 Q19 46 21 56 L25 58 L25 37 Z" fill="url(#mg)" stroke="#14171C" stroke-width=".5"/>
+      <rect x="25.3" y="36.5" width="4.4" height="5.6" rx="1.5" fill="url(#mg)" stroke="#14171C" stroke-width=".5"/>
+      <rect x="25.3" y="43" width="4.4" height="5.6" rx="1.5" fill="url(#mg)" stroke="#14171C" stroke-width=".5"/>
+      <rect x="25.3" y="49.5" width="4.4" height="5.6" rx="1.5" fill="url(#mg)" stroke="#14171C" stroke-width=".5"/>
+      <path d="M25.3 56.5 H30 V64 H26.5 Z" fill="url(#mg)" stroke="#14171C" stroke-width=".5"/>
+      <ellipse cx="12" cy="37.5" rx="3.3" ry="7" transform="rotate(10 12 37.5)" fill="url(#mg)" stroke="#14171C" stroke-width=".5"/>
+      <ellipse cx="9.4" cy="55" rx="2.8" ry="8" transform="rotate(12 9.4 55)" fill="url(#mg)" stroke="#14171C" stroke-width=".5"/>
+      <circle cx="7.4" cy="66" r="2.2" fill="#5C6370"/>
+      <path d="M19.5 70 Q16 84 20 97 Q24 100 28.5 97 Q30.5 84 29.5 74 Z" fill="url(#mr)" stroke="#14171C" stroke-width=".5"/>
+      <path d="M24 74 Q22.8 86 24.8 97" fill="none" stroke="#7E2620" stroke-width=".6"/>
+      <ellipse cx="24" cy="100.5" rx="3.4" ry="2.8" fill="url(#mg)" stroke="#14171C" stroke-width=".5"/>
+      <path d="M20.5 103.5 Q19 114 22 126 L26 126 Q28.2 114 27.3 103.5 Z" fill="url(#mr)" stroke="#14171C" stroke-width=".5"/>
+      <ellipse cx="23.5" cy="130" rx="4" ry="2.4" fill="#5C6370"/>
+    </g>
+    <!-- Mitad izquierda del cuerpo, vista de espalda -->
+    <g id="espaldaMitad">
+      <path d="M18 22 Q30 18 30 20 L30 74 L20 72 Q16 46 15 30 Z" fill="#3A3F48"/>
+      <path d="M19 68 Q16 84 19 98 L21 128 L27 128 L29 98 L30 74 Z" fill="#3A3F48"/>
+      <path d="M15 22.5 Q9.5 25 9.6 34 L8.2 46 L5.4 63 L9.6 64.5 L13.6 48 L16.8 36 L19 27 Z" fill="#3A3F48"/>
+      <path d="M19 27 Q15.5 40 21.5 55 L30 59 L30 38 Z" fill="url(#mg)" stroke="#14171C" stroke-width=".5"/>
+      <path d="M30 16 L19 24.5 L30 41 Z" fill="url(#mg)" stroke="#14171C" stroke-width=".5"/>
+      <ellipse cx="15.5" cy="27" rx="4.6" ry="5.2" fill="url(#mg)" stroke="#14171C" stroke-width=".5"/>
+      <path d="M23.5 54 L30 56.5 V62.5 H23 Z" fill="url(#mg)" stroke="#14171C" stroke-width=".5"/>
+      <ellipse cx="12" cy="37.5" rx="3.3" ry="7" transform="rotate(10 12 37.5)" fill="url(#mg)" stroke="#14171C" stroke-width=".5"/>
+      <ellipse cx="9.4" cy="55" rx="2.8" ry="8" transform="rotate(12 9.4 55)" fill="url(#mg)" stroke="#14171C" stroke-width=".5"/>
+      <circle cx="7.4" cy="66" r="2.2" fill="#5C6370"/>
+      <path d="M30 60.5 Q21 59 19 65 Q18 72.5 23.5 74.8 Q28.6 75.6 30 71.5 Z" fill="url(#mr)" stroke="#14171C" stroke-width=".5"/>
+      <path d="M19 73.5 Q17 86 20.5 98 L28.5 98 Q30.3 86 29.6 74.5 Z" fill="url(#mr)" stroke="#14171C" stroke-width=".5"/>
+      <path d="M24.5 76 Q23.8 87 24.4 98" fill="none" stroke="#7E2620" stroke-width=".6"/>
+      <path d="M20.3 101.5 Q17 110 20.8 118 L22.8 126 L26.2 126 Q29 112 27.3 101.5 Z" fill="url(#mr)" stroke="#14171C" stroke-width=".5"/>
+      <path d="M23.8 103 Q23.2 110 23.8 117" fill="none" stroke="#7E2620" stroke-width=".6"/>
+      <ellipse cx="23.5" cy="130" rx="4" ry="2.4" fill="#5C6370"/>
+    </g>
+    <g id="cabeza">
+      <ellipse cx="30" cy="9.5" rx="6" ry="7.5" fill="url(#mg)"/>
+      <path d="M27 16 H33 L34 22 H26 Z" fill="#5C6370"/>
+    </g>
+    <g id="cuerpoFrente"><use href="#frenteMitad"/><use href="#frenteMitad" transform="translate(60 0) scale(-1 1)"/><use href="#cabeza"/></g>
+    <g id="cuerpoEspalda"><use href="#espaldaMitad"/><use href="#espaldaMitad" transform="translate(60 0) scale(-1 1)"/><use href="#cabeza"/></g>
+  </defs>
+  <rect width="800" height="500" fill="url(#fondo)"/>
+  <circle cx="720" cy="40" r="130" fill="#3A2675" opacity=".3"/>
+  <circle cx="60" cy="480" r="120" fill="#31807A" opacity=".25"/>
+
+  <!-- Encabezado -->
+  <image href="data:image/png;base64,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" x="50" y="22" width="47" height="40"/>
+  <text x="106" y="50" font-size="24" font-weight="700" fill="#F5F7FA">TrimaGym</text>
+  <text x="750" y="50" font-size="14" fill="#A0E4E4" text-anchor="end">Rutinas · Membresías · Panel admin</text>
+
+  <!-- Marcos de teléfono -->
+  <rect x="50" y="80" width="200" height="390" rx="30" fill="#0E1117" stroke="#3A404D" stroke-width="2"/>
+  <rect x="300" y="80" width="200" height="390" rx="30" fill="#0E1117" stroke="#3A404D" stroke-width="2"/>
+  <rect x="550" y="80" width="200" height="390" rx="30" fill="#0E1117" stroke="#3A404D" stroke-width="2"/>
+
+  <!-- ===== Pantalla 1: rutina de hoy con video ===== -->
+  <g clip-path="url(#p1)">
+    <rect x="58" y="88" width="184" height="374" fill="#fff"/>
+    <rect x="58" y="88" width="184" height="58" fill="#3A2675"/>
+    <text x="72" y="112" font-size="10" fill="#A0E4E4">Lunes · Día de piernas</text>
+    <text x="72" y="132" font-size="15" font-weight="700" fill="#fff">Tu rutina de hoy</text>
+    <!-- video demostrativo -->
+    <rect x="68" y="156" width="164" height="112" rx="10" fill="url(#foco)"/>
+    <!-- figura anatómica: frente y espalda, músculos trabajados en rojo -->
+    <use href="#cuerpoFrente" transform="translate(117 159) scale(.72)"/>
+    <use href="#cuerpoEspalda" transform="translate(171 159) scale(.72)"/>
+    <circle cx="92" cy="200" r="15" fill="#31807A" opacity=".95"/>
+    <polygon points="87,191.5 87,208.5 100.5,200" fill="#fff"/>
+    <rect x="76" y="244" width="34" height="15" rx="7.5" fill="#000" opacity=".7"/>
+    <text x="93" y="255" font-size="9" fill="#fff" text-anchor="middle">0:45</text>
+    <rect x="76" y="262" width="148" height="2.5" rx="1.2" fill="#3A3F48"/>
+    <rect x="76" y="262" width="52" height="2.5" rx="1.2" fill="#6EB59B"/>
+    <text x="68" y="286" font-size="11" font-weight="700" fill="#161E46">Sentadilla</text>
+    <text x="68" y="300" font-size="9" fill="#31807A">Cuádriceps · Glúteos · Pantorrillas</text>
+    <!-- lista de ejercicios -->
+    <g font-size="10">
+      <rect x="68" y="312" width="164" height="36" rx="8" fill="#F3F6F9"/>
+      <circle cx="84" cy="330" r="8" fill="#6EB59B"/>
+      <path d="M80 330l3 3 5-6" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+      <text x="98" y="334" fill="#161E46">Sentadilla</text><text x="222" y="334" fill="#5A6078" text-anchor="end">4 × 12</text>
+      <rect x="68" y="354" width="164" height="36" rx="8" fill="#F3F6F9"/>
+      <circle cx="84" cy="372" r="8" fill="none" stroke="#C9CEDA" stroke-width="2"/>
+      <text x="98" y="376" fill="#161E46">Prensa</text><text x="222" y="376" fill="#5A6078" text-anchor="end">3 × 10</text>
+      <rect x="68" y="396" width="164" height="36" rx="8" fill="#F3F6F9"/>
+      <circle cx="84" cy="414" r="8" fill="none" stroke="#C9CEDA" stroke-width="2"/>
+      <text x="98" y="418" fill="#161E46">Peso muerto</text><text x="222" y="418" fill="#5A6078" text-anchor="end">3 × 8</text>
+    </g>
+    <rect x="58" y="440" width="184" height="22" fill="#fff"/>
+  </g>
+
+  <!-- ===== Pantalla 2: membresía ===== -->
+  <g clip-path="url(#p2)">
+    <rect x="308" y="88" width="184" height="374" fill="#fff"/>
+    <rect x="308" y="88" width="184" height="58" fill="#31807A"/>
+    <text x="322" y="112" font-size="10" fill="#D8F3EE">Hola, Camila</text>
+    <text x="322" y="132" font-size="15" font-weight="700" fill="#fff">Mi membresía</text>
+    <!-- anillo de días restantes -->
+    <circle cx="400" cy="214" r="48" fill="none" stroke="#E9EDF2" stroke-width="12"/>
+    <circle cx="400" cy="214" r="48" fill="none" stroke="#6EB59B" stroke-width="12" stroke-linecap="round"
+            stroke-dasharray="120 302" transform="rotate(-90 400 214)"/>
+    <text x="400" y="216" font-size="26" font-weight="700" fill="#161E46" text-anchor="middle">12</text>
+    <text x="400" y="232" font-size="10" fill="#5A6078" text-anchor="middle">días</text>
+    <text x="400" y="285" font-size="11" fill="#161E46" text-anchor="middle">Tu plan vence el <tspan font-weight="700">7 de noviembre</tspan></text>
+    <rect x="320" y="298" width="160" height="44" rx="10" fill="#F3F6F9"/>
+    <text x="332" y="316" font-size="10" fill="#5A6078">Plan</text>
+    <text x="332" y="333" font-size="12" font-weight="700" fill="#161E46">Mensual libre</text>
+    <rect x="428" y="310" width="42" height="18" rx="9" fill="#DDF3EA"/>
+    <text x="449" y="323" font-size="9" fill="#31807A" text-anchor="middle">Activo</text>
+    <rect x="320" y="350" width="160" height="44" rx="10" fill="#F3F6F9"/>
+    <text x="332" y="368" font-size="10" fill="#5A6078">Asistencias este mes</text>
+    <text x="332" y="385" font-size="12" font-weight="700" fill="#161E46">14 visitas</text>
+    <rect x="320" y="404" width="160" height="34" rx="17" fill="#3A2675"/>
+    <text x="400" y="425" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">Renovar plan</text>
+  </g>
+
+  <!-- ===== Pantalla 3: panel de administración ===== -->
+  <g clip-path="url(#p3)">
+    <rect x="558" y="88" width="184" height="374" fill="#fff"/>
+    <rect x="558" y="88" width="184" height="58" fill="#161E46"/>
+    <text x="572" y="112" font-size="10" fill="#A0E4E4">Administrador</text>
+    <text x="572" y="132" font-size="15" font-weight="700" fill="#fff">Panel del gimnasio</text>
+    <!-- indicadores -->
+    <g>
+      <rect x="568" y="156" width="78" height="52" rx="10" fill="#F3F6F9"/>
+      <text x="577" y="174" font-size="9" fill="#5A6078">Inscritos</text>
+      <text x="577" y="198" font-size="20" font-weight="700" fill="#161E46">124</text>
+      <rect x="654" y="156" width="78" height="52" rx="10" fill="#FFF3E2"/>
+      <text x="663" y="174" font-size="9" fill="#9A5B00">Por vencer</text>
+      <text x="663" y="198" font-size="20" font-weight="700" fill="#D9822B">9</text>
+      <rect x="568" y="214" width="78" height="52" rx="10" fill="#F3F6F9"/>
+      <text x="577" y="232" font-size="9" fill="#5A6078">Activos hoy</text>
+      <text x="577" y="256" font-size="20" font-weight="700" fill="#161E46">46</text>
+      <rect x="654" y="214" width="78" height="52" rx="10" fill="#E6F5EF"/>
+      <text x="663" y="232" font-size="9" fill="#31807A">Nuevos mes</text>
+      <text x="663" y="256" font-size="20" font-weight="700" fill="#31807A">+18</text>
+    </g>
+    <!-- asistencia semanal -->
+    <text x="568" y="286" font-size="10" font-weight="700" fill="#161E46">Asistencia semanal</text>
+    <g fill="#6EB59B">
+      <rect x="572" y="318" width="14" height="22" rx="3"/>
+      <rect x="595" y="304" width="14" height="36" rx="3"/>
+      <rect x="618" y="310" width="14" height="30" rx="3"/>
+      <rect x="641" y="296" width="14" height="44" rx="3" fill="#31807A"/>
+      <rect x="664" y="306" width="14" height="34" rx="3"/>
+      <rect x="687" y="314" width="14" height="26" rx="3"/>
+      <rect x="710" y="326" width="14" height="14" rx="3"/>
+    </g>
+    <!-- lista de vencimientos -->
+    <text x="568" y="362" font-size="10" font-weight="700" fill="#161E46">Por vencer</text>
+    <g font-size="10">
+      <rect x="568" y="370" width="164" height="28" rx="8" fill="#F3F6F9"/>
+      <text x="578" y="388" fill="#161E46">Diego M.</text><text x="722" y="388" fill="#D9822B" text-anchor="end">2 días</text>
+      <rect x="568" y="402" width="164" height="28" rx="8" fill="#F3F6F9"/>
+      <text x="578" y="420" fill="#161E46">Fernanda R.</text><text x="722" y="420" fill="#D9822B" text-anchor="end">3 días</text>
+      <rect x="568" y="434" width="164" height="28" rx="8" fill="#F3F6F9"/>
+      <text x="578" y="452" fill="#161E46">Tomás A.</text><text x="722" y="452" fill="#5A6078" text-anchor="end">5 días</text>
+    </g>
+  </g>
+</svg>

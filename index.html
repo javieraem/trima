@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="es-CL">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trima | Software a medida y soporte técnico en Chile</title>
+  <meta name="description" content="Trima desarrolla sitios web y apps a medida, repara computadores, consolas, televisores y electrodomésticos, e imprime repuestos en 3D. Atención en todo Chile.">
+  <link rel="canonical" href="https://www.trimaingenieria.cl/">
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+  <!-- Vista previa al compartir el link (WhatsApp, Facebook, LinkedIn) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CL">
+  <meta property="og:site_name" content="Trima">
+  <meta property="og:title" content="Trima | Software a medida y soporte técnico">
+  <meta property="og:description" content="Sitios web y apps a medida. Reparación de computadores, consolas y electrodomésticos. Repuestos impresos en 3D.">
+  <meta property="og:url" content="https://www.trimaingenieria.cl/">
+  <meta property="og:image" content="https://www.trimaingenieria.cl/img/og-trima.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Datos de la empresa para Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Trima",
+    "url": "https://www.trimaingenieria.cl/",
+    "logo": "https://www.trimaingenieria.cl/img/logo-trima-512.png",
+    "image": "https://www.trimaingenieria.cl/img/og-trima.jpg",
+    "description": "Desarrollo de software a medida (sitios web y apps), soporte técnico, reparación de equipos electrónicos y electrodomésticos, e impresión 3D de repuestos.",
+    "telephone": "+56934345416",
+    "email": "trimacustomsoftware@gmail.com",
+    "address": { "@type": "PostalAddress", "addressCountry": "CL" },
+    "areaServed": { "@type": "Country", "name": "Chile" },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Servicios",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Desarrollo de sitios web y apps a medida" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Soporte y solución de problemas de hardware y software" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Reparación de consolas de videojuegos, televisores, equipos de música y electrodomésticos" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Impresión 3D de repuestos y piezas plásticas" } }
+      ]
+    }
+  }
+  </script>
+
+  <style>
+    /* Fondo negro con tarjetas gris oscuro para que resalten */
+    :root {
+      --fondo: #000;
+      --tarjeta: #15171C;
+      --titulo: #F5F7FA;
+      --teal: #31807A;
+      --menta: #6EB59B;
+      --cielo: #A0E4E4;
+      --texto: #C5CAD3;
+      --borde: #2A2E37;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      color: var(--texto);
+      background: var(--fondo);
+      line-height: 1.6;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: var(--menta); }
+    .contenedor { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+
+    /* Encabezado */
+    header {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(0,0,0,.85);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--borde);
+    }
+    .barra { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .marca { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--titulo); font-weight: 700; font-size: 1.35rem; }
+    .marca img { width: 44px; height: auto; }
+    nav { display: flex; gap: 22px; }
+    nav a { color: var(--titulo); text-decoration: none; font-size: .95rem; }
+    nav a:hover { color: var(--teal); }
+
+    /* Portada */
+    .portada { padding: 72px 0 64px; background: linear-gradient(160deg, #0A2422 0%, #000 55%, #170F2B 100%); }
+    .portada .contenedor { display: grid; grid-template-columns: 1.4fr 1fr; gap: 40px; align-items: center; }
+    h1 { color: var(--titulo); font-size: clamp(2rem, 4.5vw, 3rem); line-height: 1.15; margin: 0 0 16px; }
+    .portada p { font-size: 1.12rem; margin: 0 0 28px; max-width: 34em; }
+    .portada .logo-grande { max-width: 300px; margin: 0 auto; }
+    .botones { display: flex; flex-wrap: wrap; gap: 12px; }
+    .boton {
+      display: inline-block; padding: 12px 22px; border-radius: 999px;
+      font-weight: 600; text-decoration: none; transition: transform .15s;
+    }
+    .boton:hover { transform: translateY(-2px); }
+    .boton.principal { background: var(--teal); color: #fff; }
+    .boton.secundario { border: 2px solid var(--titulo); color: var(--titulo); }
+
+    section { padding: 72px 0; }
+    h2 { color: var(--titulo); font-size: clamp(1.6rem, 3vw, 2.1rem); margin: 0 0 8px; }
+    .bajada { margin: 0 0 36px; }
+
+    /* Servicios */
+    .servicios { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+    .servicio { padding: 28px; background: var(--tarjeta); border: 1px solid var(--borde); border-radius: 18px; }
+    .servicio .icono {
+      width: 48px; height: 48px; border-radius: 12px; display: grid; place-items: center;
+      background: #1C3330; color: var(--cielo); margin-bottom: 14px;
+    }
+    .servicio h3 { color: var(--titulo); margin: 0 0 8px; font-size: 1.25rem; }
+    .servicio ul { margin: 12px 0 0; padding-left: 20px; }
+    /* Tarjeta de ancho completo con imagen al lado */
+    .servicio.ancho { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: center; }
+    .servicio.ancho img { border-radius: 12px; }
+
+    /* Portafolio */
+    #portafolio { border-top: 1px solid var(--borde); }
+    h3.grupo { color: var(--cielo); font-size: 1.1rem; text-transform: uppercase; letter-spacing: .06em; margin: 0 0 16px; }
+    .grilla { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-bottom: 44px; }
+    .grilla:last-child { margin-bottom: 0; }
+    .proyecto { background: var(--tarjeta); border-radius: 18px; overflow: hidden; border: 1px solid var(--borde); display: flex; flex-direction: column; }
+    .proyecto img { aspect-ratio: 8 / 5; width: 100%; object-fit: cover; border-bottom: 1px solid var(--borde); }
+    .proyecto .info { padding: 20px 22px 22px; display: flex; flex-direction: column; flex: 1; }
+    .proyecto h4 { color: var(--titulo); margin: 0 0 6px; font-size: 1.15rem; }
+    .proyecto p { margin: 0 0 16px; flex: 1; }
+    .proyecto a { font-weight: 600; text-decoration: none; }
+    .proyecto a:hover { text-decoration: underline; }
+    .etiqueta { display: inline-block; font-size: .85rem; font-weight: 600; color: #D6CCF5; background: #2A2148; padding: 4px 12px; border-radius: 999px; align-self: flex-start; }
+
+    /* Contacto */
+    .contacto { text-align: center; }
+    .contacto .botones { justify-content: center; margin-top: 24px; }
+    .boton.whatsapp { background: #1F8F4E; color: #fff; }
+
+    footer { border-top: 1px solid var(--borde); padding: 24px 0; text-align: center; font-size: .9rem; }
+
+    @media (max-width: 760px) {
+      nav { display: none; }
+      .portada { padding: 48px 0; }
+      .portada .contenedor { grid-template-columns: 1fr; text-align: center; }
+      .portada .logo-grande { max-width: 160px; order: -1; }
+      .portada p { margin-left: auto; margin-right: auto; }
+      .portada .botones { justify-content: center; }
+      section { padding: 56px 0; }
+      .servicios, .grilla, .servicio.ancho { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="contenedor barra">
+    <a class="marca" href="#inicio" aria-label="Trima, inicio">
+      <img src="img/logo-trima.png" alt="" width="160" height="136">Trima
+    </a>
+    <nav aria-label="Secciones">
+      <a href="#servicios">Servicios</a>
+      <a href="#portafolio">Portafolio</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+  <div class="portada">
+    <div class="contenedor">
+      <div>
+        <h1>Software a medida y soporte técnico</h1>
+        <p>Creo sitios web y apps pensados para tu negocio, reparo todo lo que tenga un sistema e imprimo en 3D los repuestos que ya no se encuentran.</p>
+        <div class="botones">
+          <a class="boton principal" href="https://wa.me/56934345416?text=Hola%20Trima%2C%20quiero%20cotizar" target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+          <a class="boton secundario" href="#portafolio">Ver proyectos</a>
+        </div>
+      </div>
+      <img class="logo-grande" src="img/logo-trima-512.png" alt="Logo de Trima: colibrí sobre montañas" width="512" height="512">
+    </div>
+  </div>
+
+  <section id="servicios">
+    <div class="contenedor">
+      <h2>Servicios</h2>
+      <p class="bajada">Tres formas de ayudarte, con atención cercana y en simple.</p>
+      <div class="servicios">
+        <article class="servicio">
+          <div class="icono" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>Software a medida</h3>
+          <p>Desarrollo a la medida de lo que necesitas, desde la idea hasta la publicación.</p>
+          <ul>
+            <li>Sitios web rápidos y bien posicionados en Google</li>
+            <li>Apps para Android, iPhone y web</li>
+            <li>Sistemas de reservas, pedidos y gestión</li>
+          </ul>
+        </article>
+        <article class="servicio">
+          <div class="icono" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <h3>Soporte y reparación de equipos</h3>
+          <p>Si tiene un sistema, lo puedo arreglar: diagnóstico y reparación de hardware y software de todo tipo.</p>
+          <ul>
+            <li>Computadores lentos, que no encienden o con virus</li>
+            <li>Consolas de videojuegos</li>
+            <li>Televisores, equipos de música y todo tipo de electrodomésticos</li>
+            <li>Programas, redes, impresoras y celulares</li>
+          </ul>
+        </article>
+        <article class="servicio ancho">
+          <div>
+            <div class="icono" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+            </div>
+            <h3>Impresión 3D de repuestos</h3>
+            <p>¿Se rompió una pieza plástica y no encuentras el repuesto? La diseño y la imprimo en 3D a la medida.</p>
+            <ul>
+              <li>Carcasas y piezas de computadores y consolas</li>
+              <li>Piezas plásticas de autos: clips, perillas, tapas y soportes</li>
+              <li>Engranajes y piezas de electrodomésticos</li>
+              <li>Cualquier pieza a partir de la original rota o de una foto con medidas</li>
+            </ul>
+          </div>
+          <img src="img/impresion-3d.svg" alt="Impresora 3D fabricando un repuesto plástico, junto a un engranaje, una perilla y una esquina de carcasa" width="800" height="500" loading="lazy">
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="portafolio">
+    <div class="contenedor">
+      <h2>Portafolio</h2>
+      <p class="bajada">Algunos proyectos que he creado.</p>
+
+      <h3 class="grupo">Sitios web</h3>
+      <div class="grilla">
+        <article class="proyecto">
+          <img src="img/quiropracticopalma.jpg" alt="Portada del sitio de Quiropráctico Ricardo Palma" width="800" height="500" loading="lazy">
+          <div class="info">
+            <h4>Quiropráctico Ricardo Palma</h4>
+            <p>Sitio web para consulta de quiropráctica en La Serena, con reserva de horas y contacto directo.</p>
+            <a href="https://quiropracticopalma.cl" target="_blank" rel="noopener">Visitar quiropracticopalma.cl →</a>
+          </div>
+        </article>
+        <article class="proyecto">
+          <img src="img/armadoymontaje.jpg" alt="Portada del sitio de Armado y Montaje A&amp;M" width="800" height="500" loading="lazy">
+          <div class="info">
+            <h4>Armado y Montaje A&amp;M</h4>
+            <p>Sitio web para empresa de andamios certificados en La Serena, orientado a minería, industria y construcción.</p>
+            <a href="https://armadoymontaje.cl" target="_blank" rel="noopener">Visitar armadoymontaje.cl →</a>
+          </div>
+        </article>
+      </div>
+
+      <h3 class="grupo">Apps</h3>
+      <div class="grilla">
+        <article class="proyecto">
+          <img src="img/trimadash.jpg" alt="Ilustración de TrimaDash: repartidora en bicicleta en Huasco" width="800" height="500" loading="lazy">
+          <div class="info">
+            <h4>TrimaDash</h4>
+            <p>App de pedidos y reparto local en Huasco: los vecinos piden a comercios de la zona y repartidores locales los entregan.</p>
+            <span class="etiqueta">En desarrollo</span>
+          </div>
+        </article>
+        <article class="proyecto">
+          <img src="img/trimagym.svg" alt="Tres pantallas de TrimaGym: rutina del día con video, días restantes de membresía y panel del administrador" width="800" height="500" loading="lazy">
+          <div class="info">
+            <h4>TrimaGym</h4>
+            <p>App para gimnasios: cada socio ve su rutina del día con videos que muestran el ejercicio y los músculos que trabaja, y cuántos días le quedan de membresía. El administrador ve inscritos, membresías por vencer y asistencia.</p>
+            <span class="etiqueta">En desarrollo</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="contacto">
+    <div class="contenedor">
+      <h2>Conversemos</h2>
+      <p class="bajada">Cuéntame qué necesitas y te respondo a la brevedad. Atiendo en todo Chile.</p>
+      <div class="botones">
+        <a class="boton whatsapp" href="https://wa.me/56934345416?text=Hola%20Trima%2C%20quiero%20cotizar" target="_blank" rel="noopener">WhatsApp +56 9 3434 5416</a>
+        <a class="boton secundario" href="mailto:trimacustomsoftware@gmail.com">trimacustomsoftware@gmail.com</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="contenedor">© 2026 Trima · Software a medida y soporte técnico · Chile</div>
+</footer>
+
+</body>
+</html>

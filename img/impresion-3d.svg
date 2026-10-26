@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" overflow="hidden" font-family="Segoe UI, Roboto, Arial, sans-serif">
+  <defs>
+    <linearGradient id="fondo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B2624"/>
+      <stop offset="1" stop-color="#171030"/>
+    </linearGradient>
+    <linearGradient id="pieza" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#A0E4E4"/>
+      <stop offset="1" stop-color="#6EB59B"/>
+    </linearGradient>
+    <pattern id="capas" width="6" height="5" patternUnits="userSpaceOnUse">
+      <rect width="6" height="5" fill="url(#pieza)"/>
+      <line x1="0" y1="4.5" x2="6" y2="4.5" stroke="#31807A" stroke-width="1" opacity=".6"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="url(#fondo)"/>
+  <circle cx="660" cy="90" r="140" fill="#3A2675" opacity=".25"/>
+  <circle cx="90" cy="460" r="130" fill="#31807A" opacity=".2"/>
+
+  <!-- Impresora 3D -->
+  <g>
+    <!-- marco -->
+    <rect x="150" y="70" width="22" height="350" rx="4" fill="#2C313C"/>
+    <rect x="428" y="70" width="22" height="350" rx="4" fill="#2C313C"/>
+    <rect x="150" y="60" width="300" height="24" rx="6" fill="#3A404D"/>
+    <rect x="130" y="410" width="340" height="34" rx="8" fill="#3A404D"/>
+    <rect x="148" y="420" width="70" height="14" rx="4" fill="#161A20"/>
+    <circle cx="236" cy="427" r="5" fill="#6EB59B"/>
+    <!-- eje X y cabezal -->
+    <rect x="172" y="170" width="256" height="10" rx="3" fill="#565E6E"/>
+    <rect x="262" y="150" width="60" height="44" rx="8" fill="#3A2675"/>
+    <rect x="270" y="158" width="44" height="8" rx="3" fill="#5B47A8"/>
+    <polygon points="284,194 300,194 296,212 288,212" fill="#C5CAD3"/>
+    <circle cx="292" cy="214" r="3" fill="#FFB347"/>
+    <!-- filamento hacia el cabezal -->
+    <path d="M520 120 C 470 90, 360 95, 300 150" fill="none" stroke="#A0E4E4" stroke-width="3"/>
+    <!-- cama -->
+    <rect x="182" y="356" width="236" height="12" rx="3" fill="#565E6E"/>
+    <rect x="190" y="350" width="220" height="8" rx="2" fill="#1C3330"/>
+    <!-- pieza en impresión: soporte en L con perforación -->
+    <path d="M232 350 V262 H262 V320 H352 V350 Z" fill="url(#capas)"/>
+    <circle cx="247" cy="285" r="6" fill="#0B2624"/>
+    <circle cx="330" cy="335" r="6" fill="#0B2624"/>
+    <!-- capa que se está depositando -->
+    <line x1="232" y1="262" x2="292" y2="262" stroke="#FFB347" stroke-width="2"/>
+  </g>
+
+  <!-- Carrete de filamento -->
+  <g transform="translate(560 130)">
+    <circle r="62" fill="#2C313C"/>
+    <circle r="50" fill="#6EB59B"/>
+    <circle r="44" fill="none" stroke="#31807A" stroke-width="2" opacity=".7"/>
+    <circle r="36" fill="none" stroke="#31807A" stroke-width="2" opacity=".7"/>
+    <circle r="20" fill="#2C313C"/>
+    <circle r="8" fill="#161A20"/>
+  </g>
+  <rect x="552" y="190" width="16" height="70" rx="4" fill="#2C313C"/>
+
+  <!-- Repuestos impresos -->
+  <g>
+    <!-- engranaje -->
+    <g transform="translate(560 340)" fill="url(#pieza)">
+      <circle r="34"/>
+      <g>
+        <rect x="-8" y="-46" width="16" height="16" rx="3"/>
+        <rect x="-8" y="30" width="16" height="16" rx="3"/>
+        <rect x="-46" y="-8" width="16" height="16" rx="3"/>
+        <rect x="30" y="-8" width="16" height="16" rx="3"/>
+        <rect x="-8" y="-46" width="16" height="16" rx="3" transform="rotate(45)"/>
+        <rect x="-8" y="30" width="16" height="16" rx="3" transform="rotate(45)"/>
+        <rect x="-46" y="-8" width="16" height="16" rx="3" transform="rotate(45)"/>
+        <rect x="30" y="-8" width="16" height="16" rx="3" transform="rotate(45)"/>
+      </g>
+      <circle r="12" fill="#0B2624"/>
+    </g>
+    <!-- clip / perilla -->
+    <g transform="translate(680 330)">
+      <rect x="-26" y="-34" width="52" height="68" rx="14" fill="#5B47A8"/>
+      <rect x="-14" y="-22" width="28" height="44" rx="8" fill="#3A2675"/>
+      <rect x="-4" y="-10" width="8" height="20" rx="3" fill="#A0E4E4"/>
+    </g>
+    <!-- esquina de carcasa -->
+    <path d="M616 420 h120 v24 h-96 v-24 z M616 420 v-40 h24 v40 z" fill="#C5CAD3"/>
+    <circle cx="628" cy="394" r="4" fill="#2C313C"/>
+    <circle cx="710" cy="432" r="4" fill="#2C313C"/>
+  </g>
+
+  <!-- Flecha de "repuesto" -->
+  <path d="M480 300 C 500 290, 510 300, 518 316" fill="none" stroke="#A0E4E4" stroke-width="3" stroke-dasharray="6 6"/>
+  <polygon points="512,318 524,322 522,308" fill="#A0E4E4"/>
+</svg>
